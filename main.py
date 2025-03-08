@@ -31,8 +31,11 @@ class Mago(Personagem):
     
     def get_fraqueza(self):
         return self.__fraqueza
-        
 
+    def exibir_informacoes(self):
+        self.apresentar()
+        print(f"Dano: {self.dano}")
+        print(f"Fraqueza: {self.get_fraqueza()}")
 
 
 # Persoangem 1 
@@ -44,9 +47,7 @@ print(personagem_1.dano)
 
 # Mago 
 mago_1 = Mago("Belveder")
-mago_1.apresentar()
-print(mago_1.dano)
-print(mago_1.get_fraqueza())
+mago_1.exibir_informacoes()
 
 
 
